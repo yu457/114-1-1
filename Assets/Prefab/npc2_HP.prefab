@@ -1494,6 +1494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u767C\u5C04\u9EDE": {fileID: 0}
   "\u5B50\u5F48": {fileID: 0}
+  "\u5B50\u5F48\u901F\u5EA6": 100
   MoveSpeed: 0.89
   SprintSpeed: 1.07
   RotationSmoothTime: 0.12
@@ -1697,7 +1698,7 @@ MonoBehaviour:
   "\u76EE\u6A19": {fileID: 0}
   "\u8DDD\u96E2": 0
   "\u8840\u91CF\u6587\u5B57": {fileID: 5794456667813693147}
-  "\u8840\u91CF": 100
+  "\u8840\u91CF": 10
   "\u8840\u689D": {fileID: 7827117706833945143}
 --- !u!136 &5680120271313247532
 CapsuleCollider:

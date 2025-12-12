@@ -47418,7 +47418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: f2795ecc2e74adb43ac7b1502d055670, type: 3}
       propertyPath: m_Name
-      value: npc1
+      value: npc2
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: f2795ecc2e74adb43ac7b1502d055670, type: 3}
       propertyPath: m_IsActive
@@ -79358,6 +79358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u767C\u5C04\u9EDE": {fileID: 1480458780}
   "\u5B50\u5F48": {fileID: 5753541819858498239, guid: 904696e421c4f7449b48ee1ffb684f51, type: 3}
+  "\u5B50\u5F48\u901F\u5EA6": 100
   MoveSpeed: 4
   SprintSpeed: 9.82
   RotationSmoothTime: 0.12
@@ -303177,7 +303178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610395451957851636, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
       propertyPath: m_Name
-      value: npc2
+      value: npc1
       objectReference: {fileID: 0}
     - target: {fileID: 5875014546517654218, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
       propertyPath: m_Mesh
@@ -303345,6 +303346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u767C\u5C04\u9EDE": {fileID: 1629186075}
   "\u5B50\u5F48": {fileID: 5753541819858498239, guid: 904696e421c4f7449b48ee1ffb684f51, type: 3}
+  "\u5B50\u5F48\u901F\u5EA6": 100
   MoveSpeed: 2
   SprintSpeed: 5.335
   RotationSmoothTime: 0.12
@@ -307061,10 +307063,10 @@ SceneRoots:
   - {fileID: 1554648292}
   - {fileID: 1754795770}
   - {fileID: 811337587}
-  - {fileID: 186016809}
   - {fileID: 343600402}
   - {fileID: 6028642055028864366}
   - {fileID: 1487139909}
   - {fileID: 8937517485145625439}
   - {fileID: 1341933162}
   - {fileID: 882577358463008051}
+  - {fileID: 186016809}

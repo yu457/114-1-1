@@ -17,6 +17,7 @@ namespace StarterAssets
 
         public Transform 發射點;
         public GameObject 子彈;
+        public int 子彈速度 = 100;
 
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
@@ -420,7 +421,7 @@ namespace StarterAssets
                 方向 = (目標 - 發射點.position).normalized;
                 發射點.rotation = Quaternion.LookRotation(方向);
                 GameObject bb = Instantiate(子彈, 發射點.position,發射點.rotation); 
-                bb.GetComponent<Rigidbody>().linearVelocity = 方向* Time.deltaTime * 100f;
+                bb.GetComponent<Rigidbody>().linearVelocity = 方向* Time.deltaTime * 子彈速度;
                 Destroy(bb, 3f);
             }
             else
