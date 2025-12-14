@@ -62,7 +62,7 @@ public class FindTarget : MonoBehaviour
         else
         {
             Vector3 原始座標 = new Vector3(0,1.6f,1.72f);
-            最終目標.transform.localPosition = Vector3.zero;
+            最終目標.transform.localPosition = 原始座標;
         }
     }
 }
