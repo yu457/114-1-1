@@ -429,6 +429,12 @@ namespace StarterAssets
                 print("沒找到目標");
             }
         }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "EnemyWeapon")
+            {
 
+            }
+        }
     }
 }
