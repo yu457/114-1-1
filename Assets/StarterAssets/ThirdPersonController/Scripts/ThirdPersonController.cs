@@ -453,6 +453,7 @@ namespace StarterAssets
                 血量--;
                 float 血條比例 = (float)血量 / (float)原始血量;
                 血條.transform.localScale = new Vector3(血條比例, 1, 1);
+                血量文字.text = 血量.ToString();
                 if(血量 <= 0)
                 {
                     //死了

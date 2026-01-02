@@ -79457,6 +79457,29 @@ MonoBehaviour:
   "\u6575\u4EBA\u5EA7\u6A19": {x: 0, y: 0, z: 0}
   "\u6700\u8FD1\u8DDD\u96E2": 0
   "\u6700\u7D42\u76EE\u6A19": {fileID: 1105077933}
+--- !u!136 &548787255
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548787242}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &548944774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252501,6 +252524,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1938819345475948, guid: 7808f0aeae535744d839b436592d7285, type: 3}
       insertIndex: -1
       addedObject: {fileID: 548787253}
+    - targetCorrespondingSourceObject: {fileID: 1938819345475948, guid: 7808f0aeae535744d839b436592d7285, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 548787255}
   m_SourcePrefab: {fileID: 100100000, guid: 7808f0aeae535744d839b436592d7285, type: 3}
 --- !u!1001 &1780796115
 PrefabInstance:
