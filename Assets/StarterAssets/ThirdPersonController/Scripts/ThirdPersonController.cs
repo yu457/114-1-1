@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -18,6 +19,11 @@ namespace StarterAssets
         public Transform 發射點;
         public GameObject 子彈;
         public int 子彈速度 = 100;
+        public GameObject 血條組件;
+        public int 血量 = 100;
+        int 原始血量;
+        public TextMeshPro 血量文字;
+        public GameObject 血條;
 
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
@@ -139,6 +145,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            原始血量 = 血量;
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -433,7 +440,29 @@ namespace StarterAssets
         {
             if (other.tag == "EnemyWeapon")
             {
-
+                /*
+                血條組件
+                1.血量int
+                  原始血量(Start)
+                2.損血 --
+                3.判斷血量
+                  目前血量/原始血量(float)
+                4.顯示血條
+                5.播放動畫(被打到、死亡)
+                */
+                血量--;
+                float 血條比例 = (float)血量 / (float)原始血量;
+                血條.transform.localScale = new Vector3(血條比例, 1, 1);
+                if(血量 <= 0)
+                {
+                    //死了
+                    _animator.SetTrigger("isDead");
+                }
+                else
+                {
+                    //播放被打到的動畫
+                    _animator.SetTrigger("isHit");
+                }
             }
         }
     }
