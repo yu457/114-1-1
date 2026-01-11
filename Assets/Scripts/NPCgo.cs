@@ -60,6 +60,8 @@ public class NPCgo : MonoBehaviour
         {
             Destroy(other.gameObject);
             血量--;
+            if (血量 < 0) return;
+
             血量文字.text = 血量.ToString();
             float 血量比例 = (float)血量 / (float)原始血量;
             血條.localScale = new Vector3(血量比例, 1, 1);

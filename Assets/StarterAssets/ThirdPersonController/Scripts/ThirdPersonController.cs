@@ -19,6 +19,7 @@ namespace StarterAssets
         public Transform 發射點;
         public GameObject 子彈;
         public int 子彈速度 = 100;
+
         public GameObject 血條組件;
         public int 血量 = 100;
         int 原始血量;
@@ -166,11 +167,14 @@ namespace StarterAssets
 
         private void Update()
         {
+            血條組件.transform.forward = Camera.main.transform.forward;
+              
             _hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
             GroundedCheck();
             Move();
+            //要開槍 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 _animator.SetTrigger("Fire");
