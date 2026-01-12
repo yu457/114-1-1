@@ -28422,6 +28422,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 441798, guid: 06a9858b4309bcf4cbe7ef09ae436c1d, type: 3}
   m_PrefabInstance: {fileID: 1323786511}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &206118557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2636985984425504835, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
+  m_PrefabInstance: {fileID: 6028642055028864366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &206124846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73645,6 +73650,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31bea3e529df47e4eaa3fad5fda198b2, type: 3}
+--- !u!1 &506614941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4104088430274963266, guid: e3f5d2166859d3749a3ddaba0318e27c, type: 3}
+  m_PrefabInstance: {fileID: 4500832389928229072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &507060358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -302890,11 +302900,15 @@ PrefabInstance:
     - target: {fileID: 5098160233596773134, guid: e3f5d2166859d3749a3ddaba0318e27c, type: 3}
       propertyPath: "\u76EE\u6A19"
       value: 
-      objectReference: {fileID: 548787243}
+      objectReference: {fileID: 0}
     - target: {fileID: 5098160233596773134, guid: e3f5d2166859d3749a3ddaba0318e27c, type: 3}
       propertyPath: "\u8840\u91CF"
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5098160233596773134, guid: e3f5d2166859d3749a3ddaba0318e27c, type: 3}
+      propertyPath: "\u8840\u689D\u7D44\u4EF6"
+      value: 
+      objectReference: {fileID: 506614941}
     - target: {fileID: 6651924088150264564, guid: e3f5d2166859d3749a3ddaba0318e27c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.11
@@ -303429,7 +303443,11 @@ PrefabInstance:
     - target: {fileID: 5990510267852826342, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
       propertyPath: "\u76EE\u6A19"
       value: 
-      objectReference: {fileID: 548787243}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990510267852826342, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
+      propertyPath: "\u8840\u689D\u7D44\u4EF6"
+      value: 
+      objectReference: {fileID: 206118557}
     - target: {fileID: 6720803822006674552, guid: c7ec2b818277d954a995c6c1f305de52, type: 3}
       propertyPath: m_Mesh
       value: 

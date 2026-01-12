@@ -11,6 +11,7 @@ public class NPCgo : MonoBehaviour
     public Transform 目標;
     public float 距離 = 0;
 
+    public GameObject 血條組件; //
     public TextMeshPro 血量文字;
     public int 血量 = 100;
     int 原始血量;
@@ -29,6 +30,8 @@ public class NPCgo : MonoBehaviour
     }
     void Update()
     {
+        血條組件.transform.forward = Camera.main.transform.forward; //
+
         if (目標 != null)
         {
             導航.SetDestination(目標.position);
@@ -52,6 +55,10 @@ public class NPCgo : MonoBehaviour
                     下次可攻擊時間 = Time.time + 攻擊間距;
                 }
             }
+        }
+        else//
+        {
+            目標 = GameObject.FindGameObjectWithTag("Player").transform;
         }
     }
     private void OnTriggerEnter(Collider other)
